@@ -4,7 +4,7 @@ import plotly.express as px
 from datetime import date
 
 st.set_page_config(page_title=Expense Tracker 2026, layout=wide)
-st.title(💰 Personal Expense Dashboard)
+st.title(Personal Expense Dashboard)
 
 # 1. Setup Data Storage (Local CSV for simplicity)
 DATA_FILE = expenses.csv
@@ -42,4 +42,5 @@ with col2
         fig = px.pie(df, values='Amount', names='Category', hole=0.4)
         st.plotly_chart(fig, use_container_width=True)
     else
+
         st.info(No data yet. Add an expense in the sidebar!)
