@@ -3,7 +3,10 @@ import pandas as pd
 import plotly.express as px
 from datetime import date
 
-st.set_page_config(page_title=Expense Tracker 2026, layout=wide)
+st.set_page_config(
+    page_title="Expense Tracker 2026",
+    layout="wide"
+)
 st.title(Personal Expense Dashboard)
 
 # 1. Setup Data Storage (Local CSV for simplicity)
@@ -44,3 +47,4 @@ with col2
     else
 
         st.info(No data yet. Add an expense in the sidebar!)
+
